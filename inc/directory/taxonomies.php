@@ -67,3 +67,20 @@ function medazin_seed_default_regions(): void {
     }
 }
 add_action( 'after_switch_theme', 'medazin_seed_default_regions' );
+
+/**
+ * Seed default sectors on theme switch
+ */
+function medazin_seed_default_sectors(): void {
+    $default_sectors = array(
+        'Restaurants', 'Cafés', 'Hôtels', 'Santé', 'Clinique', 'Pharmacie',
+        'Éducation', 'Transport', 'Immobilier', 'Services', 'Commerces', 'Banques', 'Automobile', 'BTP'
+    );
+
+    foreach ( $default_sectors as $sector_name ) {
+        if ( ! term_exists( $sector_name, 'sector' ) ) {
+            wp_insert_term( $sector_name, 'sector' );
+        }
+    }
+}
+add_action( 'after_switch_theme', 'medazin_seed_default_sectors' );
