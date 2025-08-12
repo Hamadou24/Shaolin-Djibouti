@@ -74,6 +74,57 @@ function medazin_widgets_init() {
 		'before_title' => '<h5 class="widget-title">',
 		'after_title' => '</h5>',
 	) );	
+
+	// Annuaire - Zones publicitaires
+	register_sidebar( array(
+		'name' => __( 'Ad - Header Banner', 'medazin' ),
+		'id' => 'medazin-ad-header',
+		'description' => __( 'Top header advertisement area', 'medazin' ),
+		'before_widget' => '<div id="%1$s" class="widget widget-ad ad-header %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="widget-title visually-hidden">',
+		'after_title' => '</h5>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Ad - Archive Top', 'medazin' ),
+		'id' => 'medazin-ad-archive-top',
+		'description' => __( 'Advertisement area above the listing archive grid', 'medazin' ),
+		'before_widget' => '<div id="%1$s" class="widget widget-ad ad-archive-top %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="widget-title visually-hidden">',
+		'after_title' => '</h5>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Ad - Archive Sidebar', 'medazin' ),
+		'id' => 'medazin-ad-archive-sidebar',
+		'description' => __( 'Sidebar advertisement area on listing archive pages', 'medazin' ),
+		'before_widget' => '<aside id="%1$s" class="widget widget-ad ad-archive-sidebar %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h5 class="widget-title visually-hidden">',
+		'after_title' => '</h5>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Ad - Single Listing Sidebar', 'medazin' ),
+		'id' => 'medazin-ad-single-sidebar',
+		'description' => __( 'Sidebar advertisement area on single listing pages', 'medazin' ),
+		'before_widget' => '<aside id="%1$s" class="widget widget-ad ad-single-sidebar %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h5 class="widget-title visually-hidden">',
+		'after_title' => '</h5>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Ad - Footer Banner', 'medazin' ),
+		'id' => 'medazin-ad-footer',
+		'description' => __( 'Footer banner advertisement area', 'medazin' ),
+		'before_widget' => '<div id="%1$s" class="widget widget-ad ad-footer %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5 class="widget-title visually-hidden">',
+		'after_title' => '</h5>',
+	) );
 }
 add_action( 'widgets_init', 'medazin_widgets_init' );
 ?>

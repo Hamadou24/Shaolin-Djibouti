@@ -47,6 +47,13 @@ if ( get_header_image() ) : ?>
                                 </nav>
                             </div>
                         </div>
+                        <?php if ( is_active_sidebar('medazin-ad-header') ) : ?>
+                        <div class="row mt-3">
+                            <div class="col-12 text-center">
+                                <?php dynamic_sidebar('medazin-ad-header'); ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

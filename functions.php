@@ -149,3 +149,14 @@ require_once get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
  require get_template_directory() . '/inc/customizer-repeater/functions.php';
+
+/**
+ * Local Directory (Annuaire) module: CPT, taxonomies, meta-boxes, shortcodes, AJAX, template tags
+ */
+require_once get_template_directory() . '/inc/directory/cpt.php';
+require_once get_template_directory() . '/inc/directory/taxonomies.php';
+require_once get_template_directory() . '/inc/directory/meta-boxes.php';
+require_once get_template_directory() . '/inc/directory/shortcodes.php';
+require_once get_template_directory() . '/inc/directory/ajax.php';
+require_once get_template_directory() . '/inc/directory/template-tags-listing.php';
+?>

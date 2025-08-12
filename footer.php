@@ -10,7 +10,14 @@
     <footer class="footer-section wow slideInUp">
         <div class="footer ">
             <div class="container ">
-				<?php		
+                <?php if ( is_active_sidebar('medazin-ad-footer') ) : ?>
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <?php dynamic_sidebar('medazin-ad-footer'); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+				<?php 		
 			if(is_active_sidebar( 'medazin-footer-1' )  || is_active_sidebar( 'medazin-footer-2' )  || is_active_sidebar( 'medazin-footer-3' )  || is_active_sidebar( 'medazin-footer-4' )) { 
 		?>
 			<div class="row">

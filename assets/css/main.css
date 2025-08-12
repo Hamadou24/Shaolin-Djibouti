@@ -7039,3 +7039,12 @@
 		width: 100%;
 		height: 100%;
 	}
+	
+	/* Listing (Annuaire) */
+	.listing-archive .listing-search-form { margin-bottom: 20px; }
+	.listing-grid .post-item { transition: box-shadow .2s ease-in-out; }
+	.listing-grid .post-item:hover { box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+	.listing-contacts { list-style: none; padding-left: 0; }
+	.listing-contacts li { margin-bottom: 6px; }
+	.listing-contacts i { width: 18px; color: #0d6efd; }
+	.widget-ad img, .widget-ad iframe { max-width: 100%; height: auto; }
